@@ -1,0 +1,10 @@
+syntax="proto2";
+
+package main;
+
+message SensorData {
+    required string ap_name = 1;
+    optional int32 sensor_id = 2;
+    optional sint32 sensor_value = 3;
+    optional int32 status = 4;
+}

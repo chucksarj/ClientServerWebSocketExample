@@ -1,0 +1,1 @@
+protoc --proto_path=../ --js_out=library=SensorData,binary:build/gen ../sdata.proto;

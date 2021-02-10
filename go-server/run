@@ -1,0 +1,2 @@
+protoc --proto_path=../ --go_out=. ../sdata.proto;
+go run server.go sdata.pb.go;

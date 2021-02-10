@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- closure lib from google -->
+  <script src="libs-js/closure-library/closure/goog/base.js"></script>
+
+  <!-- Protobuf -->
+  <script src="libs-js/constants.js"></script>
+  <script src="libs-js/utils.js"></script>
+  <script src="libs-js/arith.js"></script>
+  <script src="libs-js/decoder.js"></script>
+  <script src="libs-js/encoder.js"></script>
+  <script src="libs-js/reader.js"></script>
+  <script src="libs-js/writer.js"></script>
+  <script src="libs-js/map.js"></script>
+  <script src="libs-js/message.js"></script>
+
+  <!-- Generated from proto -->
+  <script src="./build/gen/SensorData.js"></script>
+  <meta charset="utf-8">
+  <script src="client.js"></script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td valign="top" width="50%">
+        <p>"Open" to create a connection to the server<br>
+          "Send" to send a message to the server<br>
+          "Close" to close the connection<br>
+          
+          <p>
+            <button id="open">Open</button>
+            <button id="close">Close</button>
+            
+            <p>Ap_Name: <input id="apName" type="text" value="AP-A"></p>
+            <p>Sensor_Id: <input id="sensorId" type="text" value="1"></p>
+            <p>Sensor_Value <input id="sensorValue" type="text" value="14"></p>
+            <button id="send">Send</button>
+
+      </td>
+      <td valign="top" width="50%">
+        <p>Output:</p>
+        <div id="output"></div>
+      </td>
+    </tr>
+  </table>
+
+  <!--<script type="text/javascript">
+        // Simulate click function
+        function clickButton() {
+            document.querySelector('#send').click();
+        }
+
+        // Simulate a click at interval
+        setInterval(clickButton, 500);
+  </script>-->
+</body>
+
+</html>
